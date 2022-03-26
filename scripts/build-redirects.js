@@ -15,7 +15,6 @@ const got = require('got');
     } catch (redirectsError){
         console.error(redirectsError);
 
-        process.exit(1);
     }
 
     let indexTemplate = fs.readFileSync(path.join(__dirname, '..', 'workers-site', 'index-template.js'), 'utf8');
